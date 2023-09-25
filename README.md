@@ -1,6 +1,6 @@
 # Portfolio Showcase: Jayadeep Pendela
 
-![Your Logo](https://www.example.com/path/to/your/logo.png)
+![Your Logo]()
 
 🌟 Welcome to the digital realm of Jayadeep Pendela, a mastermind in web design and development! 🚀
 
