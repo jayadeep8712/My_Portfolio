@@ -1,0 +1,149 @@
+.services {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('images/abt2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    cursor: default;/**/
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+ 
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 90px;
+    animation: slideTop 1s ease forwards;;
+}
+
+.container {
+    padding: 90px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;   
+}
+
+.services-list div {
+    background: linear-gradient(to bottom right, aqua, #f437fabd, #fca6b5, #fcb3fc);
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 13px;/**/
+    border-radius: 20px;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #00aaff, 1px 1px 40px #00a4b0dd;
+    /*animation: Hover 2s ease-in-out infinite alternate ;*/
+}
+
+/*@keyframes Hover {
+    0% {
+        transform:   translateY(0);
+    }
+
+    100% {
+        transform:  translateY(-20px);
+    }
+}*/
+
+.services-list div:hover{
+    transform: translateY(-25px);
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 1%;
+    animation: fadeInScaleAnimation ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+    opacity: 0;
+}
+
+@keyframes fadeInScaleAnimation {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #08dff7;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #001b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    border: 2px solid aqua;
+}
+
+
+.read:hover {
+    box-shadow:
+        0 0 7px aqua,
+        0 0 10px aqua,
+        0 0 20px aqua,
+        0 0 40px aqua,
+        0 0 80px aqua;
+}
+
+
+
+.services-list div p {
+    animation: slidebottom 3s ease-in-out forwards;
+    animation-delay: calc(0.2s * var(--i));
+    opacity: 1;
+}
+
+@keyframes slidebottom {
+    0% {
+        transform: translateY(-90px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+ 
