@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+.abt {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(images/newab2.png) no-repeat; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    cursor: default;   
+   
+}
+.abt-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    transform: translateY(-8%);           
+}
+ 
+h1 span:hover{
+    text-shadow: 0 0 15px aqua;
+    animation: slideright 1s ease forwards;
+}
+
+.abt h1{
+    animation: slideright 1s ease forwards;
+}
+@keyframes slideright {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+ 
+.abt h4{
+ font-weight: 600;
+ line-height: 1.6;
+ margin:5px 0 30px;
+ animation: slideleft 1s ease forwards;
+}
+
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.abt p{
+    animation: slideright 1s ease
+}
+
+.me img {
+    animation: float 3s ease-in-out infinite;
+    width: 73%;
+    border-radius: 50%;
+    box-shadow: 0 0 7px #e100ff,
+    0 0 10px aqua,
+    0 0 20px #e100ff,
+    0 0 40px aqua,
+    0 0 50px #e100ff;
+    
+  
+}
+
+ 

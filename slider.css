@@ -1,0 +1,64 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    cursor: default;
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.conteudo {
+    width: 80%;
+    margin-top: 5%;/**/
+    margin-left: 10%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    scrollbar-width: thin;  
+}
+
+/* Style the scrollbar */
+.conteudo::-webkit-scrollbar {
+    width: 8px;  
+}
+
+.conteudo::-webkit-scrollbar-track {
+    background: transparent;  
+}
+
+.conteudo::-webkit-scrollbar-thumb {
+    background: transparent;  
+}
+
+.carrousel {
+    flex: 0 0 auto;
+    border-radius: 30px;
+    min-height: 600px;
+    min-width: 100%;
+    background-color: #00000080;
+    scroll-snap-align: start;
+    text-align: center;   
+}
+ 
+.carrousel:nth-child(odd) {
+    background: linear-gradient(-229deg, #fbd52da4, #ef3a7c9f);
+}
+
+.carrousel:nth-child(even) {
+    background: linear-gradient( -229deg, #4986f0b9, #e480f6b1);
+}
+
+.active{
+    color:aqua;
+    text-shadow: 0 0 4px aqua, 0 0 8px aqua;
+}
+
