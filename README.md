@@ -1,7 +1,5 @@
 # Portfolio Showcase: Jayadeep Pendela
 
-![Your Logo](images/jai 1.png)
-
 🌟 Welcome to the digital realm of Jayadeep Pendela, a mastermind in web design and development! 🚀
 
 Jayadeep Pendela's Portfolio Website is more than just a digital presence; it's a canvas where innovation meets creativity. Explore the digital world Jayadeep has woven, and let's embark on a journey through the symphony of code and design.
