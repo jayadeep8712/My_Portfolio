@@ -1,0 +1,199 @@
+class AICodeAnimator {
+    constructor() {
+        this.codeLines = [
+            '<span class="code-comment">// Full Stack Developer & AI/ML Enthusiast</span>',
+            '<span class="code-keyword">const</span> <span class="code-variable">jayadeep</span> = {',
+            '&nbsp;&nbsp;<span class="code-variable">name</span>: <span class="code-string">"Jayadeep Pendela"</span>,',
+            '&nbsp;&nbsp;<span class="code-variable">role</span>: <span class="code-string">"Full Stack Developer"</span>,',
+            '&nbsp;&nbsp;<span class="code-variable">specialization</span>: <span class="code-string">"AI/ML Integration"</span>,',
+            '',
+            '&nbsp;&nbsp;<span class="code-variable">techStack</span>: {',
+            '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">frontend</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Vue"</span>, <span class="code-string">"TypeScript"</span>],',
+            '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">backend</span>: [<span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Express"</span>],',
+            '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">database</span>: [<span class="code-string">"MongoDB"</span>, <span class="code-string">"PostgreSQL"</span>, <span class="code-string">"Firebase"</span>],',
+            '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">ai_ml</span>: [<span class="code-string">"TensorFlow"</span>, <span class="code-string">"PyTorch"</span>, <span class="code-string">"OpenAI"</span>]',
+            '&nbsp;&nbsp;},',
+            '',
+            '&nbsp;&nbsp;<span class="code-variable">buildProject</span>: (<span class="code-variable">requirements</span>) => {',
+            '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">const</span> <span class="code-variable">solution</span> = <span class="code-string">`AI-powered ${requirements}`</span>;',
+            '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-variable">solution</span>;',
+            '&nbsp;&nbsp;}',
+            '};',
+            '',
+            '<span class="code-comment">// Ready to build the future together?</span>',
+            '<span class="code-variable">jayadeep</span>.<span class="code-function">buildProject</span>(<span class="code-string">"web application"</span>);'
+        ];
+        
+        this.currentLine = 0;
+        this.container = document.getElementById('codeContainer');
+        this.typingSpeed = 35;
+        this.lineDelay = 600;
+    }
+
+    createCodeLine(content) {
+        const line = document.createElement('div');
+        line.className = 'code-line';
+        line.innerHTML = content;
+        return line;
+    }
+
+    typeLine(lineElement, content, index = 0) {
+        return new Promise((resolve) => {
+            if (index < content.length) {
+                setTimeout(() => {
+                    lineElement.innerHTML = content.substring(0, index + 1);
+                    this.typeLine(lineElement, content, index + 1).then(resolve);
+                }, this.typingSpeed);
+            } else {
+                resolve();
+            }
+        });
+    }
+
+    async animateCode() {
+        if (this.currentLine >= this.codeLines.length) {
+            // Restart animation after completion
+            setTimeout(() => {
+                this.container.innerHTML = '';
+                this.currentLine = 0;
+                this.animateCode();
+            }, 4000);
+            return;
+        }
+
+        const lineContent = this.codeLines[this.currentLine];
+        const lineElement = this.createCodeLine('');
+        this.container.appendChild(lineElement);
+
+        // Add typing cursor
+        const cursor = document.createElement('span');
+        cursor.className = 'typing-cursor';
+        lineElement.appendChild(cursor);
+
+        await this.typeLine(lineElement, lineContent);
+        
+        // Remove cursor and mark line as visible
+        cursor.remove();
+        lineElement.classList.add('visible');
+
+        this.currentLine++;
+        
+        // Continue to next line
+        setTimeout(() => {
+            this.animateCode();
+        }, this.lineDelay);
+    }
+
+    start() {
+        setTimeout(() => {
+            this.animateCode();
+        }, 1000);
+    }
+}
+
+
+
+
+
+-----------------------
+
+
+
+
+
+class AICodeAnimator {
+            constructor() {
+                this.codeLines = [
+                    '<span class="code-comment">// Welcome to my creative space</span>',
+                    '<span class="code-keyword">class</span> <span class="code-function">Portfolio</span> {',
+                    '&nbsp;&nbsp;<span class="code-keyword">constructor</span>() {',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-variable">name</span> = <span class="code-string">"Jayadeep Pendela"</span>;',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-variable">role</span> = <span class="code-string">"UI/UX Designer & Developer"</span>;',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-variable">passion</span> = <span class="code-string">"Creating digital magic"</span>;',
+                    '&nbsp;&nbsp;}',
+                    '',
+                    '&nbsp;&nbsp;<span class="code-function">getSkills</span>() {',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> [',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"React"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"Figma"</span>,',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"UI/UX Design"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"Node.js"</span>',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;];',
+                    '&nbsp;&nbsp;}',
+                    '',
+                    '&nbsp;&nbsp;<span class="code-function">buildProject</span>(<span class="code-variable">idea</span>) {',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">const</span> <span class="code-variable">creativity</span> = <span class="code-number">100</span>;',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">const</span> <span class="code-variable">code</span> = <span class="code-string">"elegant"</span>;',
+                    '&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-variable">idea</span> + <span class="code-string">" × innovation"</span>;',
+                    '&nbsp;&nbsp;}',
+                    '}',
+                    '',
+                    '<span class="code-comment">// Let\'s create something amazing together!</span>',
+                    '<span class="code-keyword">const</span> <span class="code-variable">myWork</span> = <span class="code-keyword">new</span> <span class="code-function">Portfolio</span>();',
+                    '<span class="code-variable">myWork</span>.<span class="code-function">buildProject</span>(<span class="code-string">"Your Vision"</span>);'
+                ];
+                
+                this.currentLine = 0;
+                this.container = document.getElementById('codeContainer');
+                this.typingSpeed = 40;
+                this.lineDelay = 800;
+            }
+
+            createCodeLine(content) {
+                const line = document.createElement('div');
+                line.className = 'code-line';
+                line.innerHTML = content;
+                return line;
+            }
+
+            typeLine(lineElement, content, index = 0) {
+                return new Promise((resolve) => {
+                    if (index < content.length) {
+                        setTimeout(() => {
+                            lineElement.innerHTML = content.substring(0, index + 1);
+                            this.typeLine(lineElement, content, index + 1).then(resolve);
+                        }, this.typingSpeed);
+                    } else {
+                        resolve();
+                    }
+                });
+            }
+
+            async animateCode() {
+                if (this.currentLine >= this.codeLines.length) {
+                    // Restart animation after completion
+                    setTimeout(() => {
+                        this.container.innerHTML = '';
+                        this.currentLine = 0;
+                        this.animateCode();
+                    }, 5000);
+                    return;
+                }
+
+                const lineContent = this.codeLines[this.currentLine];
+                const lineElement = this.createCodeLine('');
+                this.container.appendChild(lineElement);
+
+                // Add typing cursor
+                const cursor = document.createElement('span');
+                cursor.className = 'typing-cursor';
+                lineElement.appendChild(cursor);
+
+                await this.typeLine(lineElement, lineContent);
+                
+                // Remove cursor and mark line as visible
+                cursor.remove();
+                lineElement.classList.add('visible');
+
+                this.currentLine++;
+                
+                // Continue to next line
+                setTimeout(() => {
+                    this.animateCode();
+                }, this.lineDelay);
+            }
+
+            start() {
+                setTimeout(() => {
+                    this.animateCode();
+                }, 1000);
+            }
+        }
