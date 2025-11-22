@@ -197,3 +197,26 @@ class AICodeAnimator {
                 }, 1000);
             }
         }
+
+--------------------------
+
+
+<div class="hero-stats qualitative">
+    <div class="stat">
+        <div class="stat-icon"><i class='bx bx-compass'></i></div>
+        <div class="stat-label">Driven by Curiosity</div>
+    </div>
+    <div class="stat">
+        <div class="stat-icon"><i class='bx bx-feather'></i></div>
+        <div class="stat-label">Design-First Thinking</div>
+    </div>
+    <div class="stat">
+        <div class="stat-icon"><i class='bx bx-target-lock'></i></div>
+        <div class="stat-label">Engineering With Precision</div>
+    </div>
+    <div class="stat">
+        <div class="stat-icon"><i class='bx bx-bulb'></i></div>
+        <div class="stat-label">Innovation as a Habit</div>
+    </div>
+</div>
+
