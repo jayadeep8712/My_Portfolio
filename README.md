@@ -8,7 +8,9 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 **[🔗 View Live Site](https://jayadeep8712.github.io/My_Portfolio/)**
 
 <img src="images/dark.png" alt="Portfolio Screenshot" width="700"/>  
-*Main portfolio interface showing dark theme*
+
+&nbsp;  
+<em>Main portfolio interface showing dark theme</em>
 
 </div>
 
