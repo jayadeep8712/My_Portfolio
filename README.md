@@ -1,3 +1,5 @@
+
+<div align="center">
 # My Portfolio
 
 A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
@@ -8,6 +10,7 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 ![Portfolio Screenshot](images/dark.png)
 *Main portfolio interface showing dark theme*
 
+</div>
 
 ## Features
 
@@ -33,7 +36,6 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 | ![Dark Theme](images/dark.png) | ![Light Theme](images/light.png) |
 
 
+<p align="center">
 **⭐ Star this project if you find it useful!**
-
-[![GitHub stars](https://img.shields.io/github/stars/jayadeep8712/repo?style=social)](https://github.com/jayadeep8712/My_Portfolio.git)
-
+</p>
