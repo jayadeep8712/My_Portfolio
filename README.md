@@ -35,5 +35,5 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 
 **⭐ Star this project if you find it useful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/jayadeep8712/repo?style=social)](https://github.com/jayadeep8712/my_portfolio)
+[![GitHub stars](https://img.shields.io/github/stars/jayadeep8712/repo?style=social)](https://github.com/jayadeep8712/My_Portfolio.git)
 
