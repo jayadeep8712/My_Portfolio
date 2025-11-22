@@ -28,12 +28,12 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 
 ## 📸 Screenshots
 
-| Dark Theme | Light Theme | Mobile View |
-|------------|-------------|-------------|
-| ![Dark Theme](images/dark.png) | ![Light Theme](images/light.png) | ![Mobile View](images/mob.png) |
+| Dark Theme | Light Theme |
+|------------|-------------|
+| ![Dark Theme](images/dark.png) | ![Light Theme](images/light.png) |
 
 
 **⭐ Star this project if you find it useful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/jayadeep8712/repo?style=social)](https://github.com/jayadeep8712/repo)
+[![GitHub stars](https://img.shields.io/github/stars/jayadeep8712/repo?style=social)](https://github.com/jayadeep8712/my_portfolio)
 
